@@ -1,0 +1,16 @@
+name: Smoke Access Change
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Smoke marker
+        run: echo "temporary access-change smoke test for Rino Sentinel v0.1.3"

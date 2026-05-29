@@ -12,7 +12,7 @@ jobs:
   rino-sentinel:
     runs-on: ubuntu-latest
     steps:
-      - uses: DonatoReis/rino-sentinel@v0.1.0
+      - uses: DonatoReis/rino-sentinel/apps/action@v0.1.0
         with:
           github-token: ${{ github.token }}
           fail-on-findings: "false"

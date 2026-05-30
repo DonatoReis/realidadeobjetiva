@@ -1,0 +1,14 @@
+name: smoke-access-change
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+  security-events: write
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "safe smoke workflow"

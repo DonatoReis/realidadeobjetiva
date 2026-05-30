@@ -1,0 +1,14 @@
+name: dogfood-token-permissions
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+  security-events: write
+
+jobs:
+  dogfood:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "safe token-permissions dogfood"
